@@ -20,8 +20,8 @@ app.get('/', function(req, res) {
     + 'Then see the result of your query!</p>'
     + '<br>'
     + '<h2>Example usage:</h2>'
-    + '<p>'+ window.location.hostname + 'May%207,%202017<p>'
-    + '<p>https://timestamp-ms-williambowen.c9users.io/1494115200000<p>'
+    + '<p>'+ req.headers.host + '/May%207,%202017<p>'
+    + '<p>'+ req.headers.host + '/1494115200000<p>'
     + '<h2>Example output:</h2>'
     + '{"unix": 1494115200000, "natural": "May 7, 2017"}'
     
